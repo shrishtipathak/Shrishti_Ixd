@@ -1,24 +1,41 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Your Page Title</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="Shrishti">
-  <meta name="description" content="IxD 20 Project">
-  <meta property="og:title" content="IxD 20 Project">
-  <meta property="og:description" content="Brief description">
-  <meta property="og:image" content="/vis.png">
-  <meta property="og:url" content="/this-page.html">
-  <meta property="og:site_name" content="Your Site Name">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image:alt" content="image description">
-  <link href="style.css" rel="stylesheet">
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-</head>
-<body>
-  <h1>IxD 2020 Project!</h1>
-  <img src = "/vis.png"/>
-  <h2>Static Vis</h2>
-  <script src="script.js"></script>
-</body>
+  <head>
+    <title>Your Page Title</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Amit Kapoor" />
+    <meta name="description" content="IXD 2020 Projects" />
+    <meta property="og:title" content="IXD 2020 Project" />
+    <meta property="og:description" content="Brief description" />
+    <meta property="og:image" content="/some-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image:alt" content="image description" />
+
+    <link href="style.css" rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.18.2"></script>
+  </head>
+
+  <body>
+    <h1>IXD 2020 Projects</h1>
+
+    <h2>Static Vis Image</h2>
+    <object type="image/svg+xml" data="visualization.svg"></object>
+    <img src="visualization.svg" />
+
+    <h2>Simple Vis Embed</h2>
+    <div id="vis"></div>
+
+    <h2>Vis with combined Spec & Data</h2>
+    <div id="vis2"></div>
+
+    <h2>Vis with seperate Spec & Data</h2>
+    <div id="vis3"></div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
